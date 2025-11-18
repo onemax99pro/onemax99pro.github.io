@@ -1,151 +1,137 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="google-site-verification" content="pKQFp2R10LGPXvUPFEqxRwsU2F4ApmsLtYeJn9dhfQs" />
-  <meta name="description" content="GERTOTO404 - Portal resmi berisi tautan ke Heylink dan informasi terbaru dari komunitas GERTOTO404. Jelajahi konten menarik kami di sini.">
-  <meta name="keywords" content="GERTOTO404, gertoto, heylink, linktree, komunitas, portal, gertoto404 github">
-  <meta name="robots" content="index, follow">
-  <meta property="og:title" content="GERTOTO404 - Portal Resmi">
-  <meta property="og:description" content="Kunjungi portal resmi GERTOTO404 dan temukan tautan serta informasi terbaru.">
-  <meta property="og:url" content="https://gertoto404.github.io/">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="https://gertoto404.github.io/logo.png">
-  <title>GERTOTO404 | Portal Resmi</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ONEMAX99PRO - Portal Resmi</title>
 
-  <!-- Optimisasi font -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<!-- Meta SEO -->
+<meta name="description" content="ONEMAX99PRO adalah portal resmi menuju link terverifikasi. Tampilan premium, cepat, dan ramah mesin pencari.">
+<link rel="canonical" href="https://onemax99pro.github.io/">
 
-  <style>
-    * {margin:0; padding:0; box-sizing:border-box;}
+<!-- Open Graph -->
+<meta property="og:title" content="ONEMAX99PRO - Portal Resmi">
+<meta property="og:description" content="Akses cepat menuju link resmi ONEMAX99PRO. Premium, aman, dan cepat.">
+<meta property="og:image" content="og-image.png">
+<meta property="og:url" content="https://onemax99pro.github.io/">
+<meta property="og:type" content="website">
+
+<!-- STYLE -->
+<style>
     body {
-      font-family: 'Poppins', sans-serif;
-      background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
-      background-size: 400% 400%;
-      animation: gradientBG 20s ease infinite;
-      color: #fff;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
-      padding: 2rem;
-      overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background: #000;
+        color: #fff;
+        overflow-x: hidden;
     }
 
-    @keyframes gradientBG {
-      0%{background-position:0% 50%;}
-      50%{background-position:100% 50%;}
-      100%{background-position:0% 50%;}
+    /* BACKGROUND LOGO FULLSCREEN */
+    .bg {
+        position: fixed;
+        top: 0; left: 0;
+        width: 100%; height: 100%;
+        background: url('og-image.png') center/contain no-repeat;
+        opacity: 0.22;
+        z-index: -1;
     }
 
-    /* Fade-in smooth effect */
-    h1, p, .link-button, footer {
-      opacity: 0;
-      transform: translateY(20px);
-      animation: fadeInUp 1s ease forwards;
+    /* OVERLAY */
+    .overlay {
+        position: fixed;
+        inset: 0;
+        background: rgba(0,0,0,0.6);
     }
 
-    h1 { animation-delay: 0.2s; }
-    p { animation-delay: 0.5s; }
-    .link-button { animation-delay: 0.8s; }
-    footer { animation-delay: 1.2s; }
-
-    @keyframes fadeInUp {
-      to { opacity: 1; transform: translateY(0); }
+    /* CENTER WRAPPER */
+    main {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        padding-bottom: 160px;
+        text-align: center;
     }
 
-    h1 {
-      font-size: 2.8rem;
-      margin-bottom: 0.5rem;
-      text-align: center;
-      background: linear-gradient(90deg, #ff6ec4, #7873f5);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      transition: transform 0.3s ease;
+    /* BUTTON GOLD */
+    .btn {
+        width: 80%;
+        max-width: 330px;
+        padding: 14px;
+        margin: 10px 0;
+        background: linear-gradient(135deg,#d4a017,#f5d57a);
+        border-radius: 14px;
+        color: #000;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.2s;
+        box-shadow: 0 0 12px rgba(245,213,122,0.35);
     }
 
-    h1:hover {
-      transform: scale(1.05);
+    .btn:active {
+        transform: translateY(2px) scale(0.98);
+        box-shadow: 0 0 5px rgba(245,213,122,0.25);
     }
 
-    p {
-      text-align: center;
-      color: #ccc;
-      margin-bottom: 2rem;
-      max-width: 480px;
-      line-height: 1.6;
+    /* NAVIGATION */
+    nav {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background: rgba(20,20,20,0.75);
+        backdrop-filter: blur(12px);
+        display: flex;
+        justify-content: space-around;
+        padding: 12px 0;
+        border-top: 1px solid rgba(255,255,255,0.15);
     }
 
-    .link-button {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 260px;
-      padding: 1rem 2rem;
-      margin: 0.5rem 0;
-      text-decoration: none;
-      color: #fff;
-      font-weight: 600;
-      background: rgba(255,255,255,0.05);
-      backdrop-filter: blur(10px);
-      border-radius: 18px;
-      border: 1.5px solid rgba(255,255,255,0.15);
-      box-shadow: 0 4px 10px rgba(0,0,0,0.25);
-      transition: all 0.4s ease;
-      position: relative;
-      overflow: hidden;
+    nav a {
+        color: #f5d57a;
+        text-decoration: none;
+        font-size: 15px;
     }
 
-    .link-button:hover {
-      background: linear-gradient(90deg, #ff6ec4, #7873f5);
-      color: #fff;
-      transform: scale(1.08);
-      border-color: #ff6ec4;
-      box-shadow: 0 6px 20px rgba(0,0,0,0.35);
+    /* HIDDEN SEO TEXT – ELEGANT */
+    .seo-text {
+        max-width: 800px;
+        margin: 25px auto 0 auto;
+        padding: 0 22px;
+        font-size: 13px;
+        color: rgba(255,255,255,0.38);
+        line-height: 1.55;
+        text-align: left;
     }
-
-    .link-button::before {
-      content: '';
-      position: absolute;
-      top:0; left: -100%;
-      width:100%;
-      height:100%;
-      background: rgba(255,255,255,0.1);
-      transition: all 0.4s;
-      transform: skewX(-20deg);
-    }
-
-    .link-button:hover::before {
-      left: 100%;
-    }
-
-    footer {
-      margin-top: auto;
-      font-size: 0.8rem;
-      color: #aaa;
-      text-align: center;
-      margin-top: 3rem;
-      transition: opacity 1s ease;
-    }
-
-    @media (max-width:500px){
-      h1 { font-size: 2.2rem; }
-      .link-button { width: 90%; }
-    }
-  </style>
+</style>
 </head>
 <body>
 
-  <h1>GERTOTO404</h1>
-  <p>Selamat datang di portal resmi GERTOTO404. Klik tombol di bawah untuk mengunjungi Heylink dan temukan tautan resmi kami.</p>
+<div class="bg"></div>
+<div class="overlay"></div>
 
-  <a class="link-button" href="https://heylink.me/gertoto404/" target="_blank" rel="noopener">Masuk ke Heylink</a>
+<main>
+    <a class="btn" href="https://heylink.me/onemax99pro/" target="_blank">MASUK</a>
+    <a class="btn" href="https://heylink.me/onemax99pro/" target="_blank">DAFTAR</a>
+</main>
 
-  <footer>© 2025 GERTOTO404 | Semua hak dilindungi</footer>
+<!-- SEO TEXT (HIDDEN LUXURY STYLE 4) -->
+<div class="seo-text">
+<p>ONEMAX99PRO merupakan portal resmi yang menyediakan akses cepat dan aman menuju layanan utama melalui link terverifikasi. Dengan tampilan premium yang ringan serta struktur halaman yang sederhana, situs ini dirancang agar mudah dibaca oleh pengguna dan mesin pencari. Google dapat memahami konten secara optimal karena setiap elemen dibuat bersih, rapi, dan responsif di semua perangkat, terutama pada pengguna mobile.</p>
+
+<p>Sebagai halaman landing utama, ONEMAX99PRO memfokuskan pengalaman pengunjung pada akses cepat menuju link resmi tanpa gangguan atau elemen berlebihan. Penggunaan metadata, struktur HTML yang jelas, dan optimasi teknis membuat halaman ini lebih mudah terindex dan mendapatkan visibilitas yang lebih baik di hasil pencarian Google. Dengan performa tinggi dan waktu muat yang sangat cepat, ONEMAX99PRO menjadi halaman yang ramah bagi pengguna maupun mesin pencari.</p>
+</div>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="https://heylink.me/onemax99pro/" target="_blank">Promo</a>
+    <a href="https://heylink.me/onemax99pro/" target="_blank">Daftar</a>
+    <a href="https://heylink.me/onemax99pro/" target="_blank">Login</a>
+    <a href="https://heylink.me/onemax99pro/" target="_blank">Live Chat</a>
+</nav>
 
 </body>
 </html>
