@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ONEMAX99PRO — Premium++ Final Ultra Gold</title>
+<meta name="description" content="ONEMAX99PRO Premium++ Final dengan efek gold particle, smoke, tombol shine, desain elegan dan SEO friendly.">
+<link rel="canonical" href="https://heylink.me/onemax99pro/">
+
+<style>
+body{margin:0;background:#000;font-family:Arial;color:#fff;overflow-x:hidden}
+
+/* SMOKE */
+.smoke{position:fixed;width:140%;height:140%;top:-20%;left:-20%;
+background:url('https://i.imgur.com/aBYP0Bc.png');background-size:cover;opacity:.16;
+animation:smokeMove 20s infinite linear}
+@keyframes smokeMove{0%{transform:scale(1) translateX(0)}50%{transform:scale(1.1) translateX(-2%)}100%{transform:scale(1) translateX(0)}}
+
+/* PARTICLES */
+@keyframes float{0%{transform:translateY(0)}100%{transform:translateY(-120vh) rotate(360deg)}}
+.p{position:fixed;top:100vh;width:8px;height:8px;background:#f5d57a;border-radius:50%;opacity:.4;
+animation:float linear infinite}
+
+/* HEADER */
+header{text-align:center;padding:25px;background:rgba(0,0,0,.55);backdrop-filter:blur(12px)}
+header h1{margin:0;font-size:34px;color:#f5d57a;text-shadow:0 0 15px #f5d57a}
+
+/* BUTTON SHINE */
+.btn{display:inline-block;padding:14px 34px;margin:10px;
+background:linear-gradient(90deg,#d4a017,#f5d57a);color:#000;font-weight:bold;border-radius:12px;
+text-decoration:none;position:relative;overflow:hidden}
+.btn:before{content:"";position:absolute;top:0;left:-100%;width:70%;height:100%;
+background:linear-gradient(120deg,transparent,rgba(255,255,255,.7),transparent);
+animation:shine 2.6s infinite}
+@keyframes shine{0%{left:-100%}50%{left:120%}100%{left:-100%}}
+
+/* SECTION */
+.section{text-align:center;padding:50px 20px}
+.section h2{color:#f5d57a;margin-bottom:15px}
+
+/* GRID */
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;padding:10px 20px}
+.card{background:#111;padding:18px;border-radius:16px;text-align:center;
+box-shadow:0 0 12px rgba(245,213,122,.25);transition:.4s}
+.card:hover{transform:translateY(-8px) scale(1.04);box-shadow:0 0 28px rgba(245,213,122,.55)}
+.card img{width:90px}
+
+/* FOOTER */
+footer{text-align:center;padding:20px;opacity:.6;margin-top:40px}
+</style>
+</head>
+<body>
+
+<div class="smoke"></div>
+
+<script>
+for(let i=0;i<35;i++){
+ let x=document.createElement('div');
+ x.classList.add('p');
+ x.style.left=Math.random()*100+'vw';
+ x.style.animationDuration=(4+Math.random()*6)+'s';
+ x.style.animationDelay=(Math.random()*5)+'s';
+ document.body.appendChild(x);
+}
+</script>
+
+<header><h1>ONEMAX99PRO Premium++ Final</h1></header>
+
+<div class="section">
+ <h2>Ultra Gold Edition</h2>
+ <a href="https://heylink.me/onemax99pro/" class="btn">MASUK</a>
+ <a href="https://heylink.me/onemax99pro/" class="btn">DAFTAR</a>
+</div>
+
+<div class="section">
+ <h2>Fitur Premium</h2>
+ <div class="grid">
+   <div class="card"><img src="https://i.imgur.com/DFAH7Bw.png"><p>Particle Gold</p></div>
+   <div class="card"><img src="https://i.imgur.com/DFAH7Bw.png"><p>Smoke Effect</p></div>
+   <div class="card"><img src="https://i.imgur.com/DFAH7Bw.png"><p>Smooth Hover</p></div>
+   <div class="card"><img src="https://i.imgur.com/DFAH7Bw.png"><p>Ultra Elegan</p></div>
+ </div>
+</div>
+
+<footer>© 2025 ONEMAX99PRO Premium++ Final — All Rights Reserved</footer>
+
+</body>
+</html>
